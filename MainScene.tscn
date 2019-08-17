@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://gameboy_hospital.png" type="Texture" id=1]
+[ext_resource path="res://GameBoyFilterMaterial_Blue.tres" type="Material" id=2]
+[ext_resource path="res://GameBoyFilterMaterial_Orange.tres" type="Material" id=3]
+
+[sub_resource type="Gradient" id=1]
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="gameboy_hospital" type="Sprite" parent="."]
+position = Vector2( 80, 72 )
+texture = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 173.0
+margin_top = 34.0
+margin_right = 302.0
+margin_bottom = 65.0
+text = "It works 
+on text too!"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 179.0
+margin_top = -23.0
+margin_right = 229.0
+margin_bottom = 17.0
+texture = SubResource( 2 )
+expand = true
+
+[node name="GBFilterBlue" type="ColorRect" parent="."]
+material = ExtResource( 2 )
+margin_left = -20.0
+margin_top = -4.0
+margin_right = 80.0
+margin_bottom = 76.0
+
+[node name="GBFilterOrange" type="ColorRect" parent="."]
+material = ExtResource( 3 )
+margin_left = 80.0
+margin_top = -4.0
+margin_right = 260.0
+margin_bottom = 76.0
