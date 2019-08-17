@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[ext_resource path="res://GameBoyFilter.shader" type="Shader" id=1]
+
+[resource]
+shader = ExtResource( 1 )
+shader_param/color_1 = Color( 0.988235, 1, 0.611765, 1 )
+shader_param/color_2 = Color( 0.984314, 0.721569, 0.215686, 1 )
+shader_param/color_3 = Color( 0.6, 0.227451, 0, 1 )
+shader_param/color_4 = Color( 0.12549, 0.0117647, 0.156863, 1 )
+shader_param/offset = 0.5
